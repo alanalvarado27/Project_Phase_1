@@ -39,7 +39,6 @@ def F_gravity(terrain_angle, rover, planet):
         else:
             gravitational_forces.append(math.sin(x) * get_mass(rover) * g_planet * -1)
     
-    
     Fgt = np.array(gravitational_forces)
     return Fgt
     
