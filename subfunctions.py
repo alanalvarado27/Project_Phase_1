@@ -19,7 +19,6 @@ def get_mass(rover):
     
     return total_mass
     
-    
 def F_gravity(terrain_angle, rover, planet):
     if(not np.isscalar(terrain_angle) and not isinstance(terrain_angle, np.ndarray)):
         raise Exception("The first input is neither a scalar nor a vector.")
