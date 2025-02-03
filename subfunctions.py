@@ -24,9 +24,9 @@ def F_gravity(terrain_angle, rover, planet):
         raise Exception("The first input is neither a scalar nor a vector.")
     for x in terrain_angle:
         if(x < -75 or x > 75):
-            raise Exception("There is an angle not within the valid range of -75 and 75 deg.")
+            raise Exception("There is an angle not within the valid range of -75 and 75 degrees.")
     if(not isinstance(rover, dict) or not isinstance(planet, dict)):
-        raise Exception("The last two inputs are not both valid dicts.")
+        raise Exception("The last two inputs are not both valid dictionaries.")
         
     g_planet = planet["g"] #in m/s
     
