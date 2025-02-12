@@ -1,5 +1,7 @@
 import numpy as np
 import math
+from scipy.special import erf
+
 
 def get_mass(rover):
     if(not isinstance(rover, dict)):
@@ -146,6 +148,8 @@ def F_drive(omega,rover):
             total_Fd.append(6 * Fd) 
 
         return total_Fd
+
+
 
 
 def F_rolling(omega, terrain_angle, rover, planet, Crr):
